@@ -1,0 +1,31 @@
+{
+    "prefix": "reproduce",
+    "dataset": "cub",
+    "extra": "cub, cifar224,miniimagenet,cars, init_cls: 10, increment: 10, car (98,14)",
+    "memory_size": 0,
+    "shuffle": true,
+    "init_cls": 100,
+    "increment": 10,
+    "model_name": "ranpac",
+    "model_names": "ranpac, ranPress",
+    "backbone_type": "pretrained_vit_b16_224_adapter",
+    "device": ["0"],
+    "seed": [1993],
+    "resume": true,
+    "shot": 5,
+    "tuned_epoch":10,
+    "init_lr":0.01,
+    "batch_size":128,
+    "weight_decay":0.0005,
+    "min_lr":0,
+    "ffn_num":64,
+    "optimizer":"sgd",
+    "M": 10000,
+
+    "ranpac": false,
+    "fscil":true,
+    "teen": false,
+    "ranPress": false,
+    "loRP": false
+}
+
